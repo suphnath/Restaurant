@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant</title>
+</head>
+<body style="text-align:center; margin-top:50px; font-family:Arial;">
+    <h1>เมนูร้านอาหาร</h1>
+
+    <form method="post">
+        <button name="type" value="thai">อาหารไทย</button>
+        <button name="type" value="italian">อาหารอิตาลี</button>
+    </form>
+
+    {% if message %}
+        <h2 style="margin-top:30px;">{{ message }}</h2>
+    {% endif %}
+</body>
+</html>
