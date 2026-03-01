@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>เมนูร้านอาหาร</h1>
+
+    <form method="post">
+        <button name="type" value="thai">อาหารไทย</button>
+        <button name="type" value="italian">อาหารอิตาลี</button>
+    </form>
+
+    {% if message %}
+        <h2>{{ message }}</h2>
+    {% endif %}
+</body>
+</html>
