@@ -1,9 +1,0 @@
-{
-  "builds": [
-    { "src": "food.py", "use": "@vercel/python" }
-  ],
-  "routes": [
-    { "src": "/style.css", "dest": "/style.css" },
-    { "src": "/(.*)", "dest": "food.py" }
-  ]
-}
